@@ -1,0 +1,25 @@
+[default]
+threads = 200
+timeout = 5
+tor_enabled = false
+tor_port = 9050
+
+[http]
+default_path = "/"
+default_method = "GET"
+success_strings = ["Welcome", "Success", "Dashboard"]
+fail_strings = ["Invalid", "Error", "denied"]
+
+[proxy]
+enabled = false
+proxy_list = []
+rotation_strategy = "random"  # random, round_robin
+
+[python]
+module_path = "./modules"
+auto_reload = false
+
+[logging]
+enabled = true
+level = "info"
+output_file = "mxm_vyper.log"
