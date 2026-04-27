@@ -1,0 +1,15 @@
+/target/
+**/*.rs.bk
+*.pdb
+*.exe
+*.dll
+*.so
+*.dylib
+.idea/
+.vscode/
+*.swp
+.DS_Store
+wordlists/*.txt
+config/*.toml
+logs/
+*.log
