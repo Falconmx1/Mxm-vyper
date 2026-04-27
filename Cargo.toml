@@ -1,0 +1,24 @@
+[package]
+name = "mxm_vyper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+async-std = "1.12"
+futures = "0.3"
+rand = "0.8"
+reqwest = { version = "0.11", features = ["socks", "json", "stream"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+clap = { version = "4.4", features = ["derive"] }
+chrono = "0.4"
+indicatif = "0.17"
+colored = "2.0"
+ssh2 = "0.9"  # Para SSH
+async-ssh2-lite = "0.2"  # Async SSH
+native-tls = "0.2"
+trust-dns-resolver = "0.23"
+libc = "0.2"
+signal-hook = "0.3"
