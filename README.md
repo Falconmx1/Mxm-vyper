@@ -1,25 +1,14 @@
-# Mxm-vyper 🔥
+# Mxm-vyper ⚡
 
-**Educational multi-protocol async brute-force auditor**
+[![Rust](https://img.shields.io/badge/rust-1.70%2B-orange)](https://www.rust-lang.org/)
+[![License](https://img.shields.io/badge/License-GPL%203.0-red)](LICENSE)
 
-> ⚠️ For authorized security testing only. Illegal use = prison time.
+**Async brute-force auditor - 10x faster than Hydra**
 
-## Why Mxm-vyper?
-- 10x faster than Hydra (Tokio async runtime)
-- Built-in proxy rotation (SOCKS5/HTTP)
-- Plugin system (Rust core + Python/Go modules)
-- Bypasses basic rate limiting
+## Installation
 
-## Quick start
-\```bash
+```bash
+git clone https://github.com/Falconmx1/Mxm-vyper.git
+cd Mxm-vyper
 cargo build --release
-./target/release/mxm-vyper -t 192.168.1.1 -p ssh -u root -w rockyou.txt --proxy socks5://localhost:9050
-\```
-
-## Architecture
-- **Rust (Tokio)** → Core async attacker
-- **Python** → Exploit scripts & reporting
-- **Go** → Cloud distributed workers
-
-## Legal
-Use only on infrastructure you own or have written permission.
+sudo cp target/release/mxm_vyper /usr/local/bin/
